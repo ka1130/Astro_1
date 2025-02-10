@@ -1,3 +1,7 @@
+## Live
+
+[!([See the site](https://astro-test-v1.netlify.app/))]
+
 # Astro Starter Kit: Minimal
 
 ```sh
