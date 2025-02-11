@@ -10,16 +10,15 @@ const socials = [
 
 <footer>
   <hr />
-  <p>
-    Learn more about my projects on {
-      socials.map(({ platform, username }) => <Social {platform} {username} />)
-    }
-  </p>
+  Learn more about my projects on {
+    socials.map(({ platform, username }) => <Social {platform} {username} />)
+  }
 </footer>
 
 <style>
-  p {
+  footer {
     font-size: 0.7rem;
     font-weight: 100;
+    text-decoration: none;
   }
 </style>
