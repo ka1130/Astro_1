@@ -1,0 +1,25 @@
+---
+import Social from "./Social.astro";
+
+const socials = [
+  { platform: "github", username: "withastro" },
+  { platform: "instagram", username: "kamila_matla" },
+  { platform: "facebook", username: "mark_z" },
+];
+---
+
+<footer>
+  <hr />
+  <p>
+    Learn more about my projects on {
+      socials.map(({ platform, username }) => <Social {platform} {username} />)
+    }
+  </p>
+</footer>
+
+<style>
+  p {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+</style>

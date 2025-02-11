@@ -1,4 +1,6 @@
 ---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 const pageTitle = "About Me";
@@ -33,8 +35,7 @@ const textCase = "uppercase";
   </head>
 
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
+    <Navigation />
 
     <h1>My Astro Site</h1>
     <h1>{pageTitle}</h1>
@@ -60,15 +61,14 @@ const textCase = "uppercase";
         {skills.map((skill) => <li class="skill">{skill}</li>)}
       </ul>
     </ul>
-
     <p>
       I am working through Astro's introductory tutorial. This is the second
       page on my website, and it's the first one I built myself!
     </p>
-
     <p>
       This site will update as I complete more of the tutorial, so keep checking
       back and see how my journey is going!
     </p>
+    <Footer />
   </body>
 </html>
