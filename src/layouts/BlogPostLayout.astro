@@ -1,19 +1,17 @@
 ---
-import Header from "../components/Header.astro";
+import BaseLayout from "./BaseLayout.astro";
 import "../styles/global.css";
 
-const { frontmatter } = Astro.props;
+const {
+  frontmatter: { title, author, pubDate, description, image },
+} = Astro.props;
+// const { title, author } = frontmatter;
 ---
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{frontmatter.title}</title>
-  </head>
-  <body>
-    <Header />
-    <h1>{frontmatter.title} by {frontmatter.author}</h1>
-    <slot />
-    <small>Written on: {frontmatter.date}</small>
-  </body>
-</html>
+<BaseLayout pagetitle={title}>
+  <p>{pubDate.toString().slice(0, 10)}</p>
+  <p><em>{description}</em></p>
+  <p>Written by: {author}</p>
+  <img src={image.url} width="300" alt={image.alt} />
+  <slot />
+</BaseLayout>
