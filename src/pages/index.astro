@@ -1,9 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
+
 const pagetitle = "Home page";
-const foo = "bar";
 ---
 
 <BaseLayout {pagetitle}>
   <h2>My awesome blog subtitle</h2>
+  <!-- NOTE client:load messages ↓ otherwise the onClick won't work -->
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>

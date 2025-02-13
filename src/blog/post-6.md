@@ -1,6 +1,5 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
-title: My Sisth Blog Post
+title: My Sixth Blog Post
 author: Astro Learner
 description: "Lorem Ipsum Dolor"
 image:
