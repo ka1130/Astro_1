@@ -8,6 +8,7 @@ image:
   alt: "Bunny"
 pubDate: 2025-02-08
 tags: ["bunny"]
+category: ["yoga"]
 ---
 
 5th post with bunny

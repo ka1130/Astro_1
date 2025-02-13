@@ -18,5 +18,14 @@
       "request": "launch",
       "type": "node-terminal"
     }
+  ],
+  "compounds": [
+    {
+      "name": "Server/Client",
+      "configurations": [
+        "Launch Chrome against localhost",
+        "Development server"
+      ]
+    }
   ]
 }
